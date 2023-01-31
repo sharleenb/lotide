@@ -7,13 +7,29 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function(input){
-  // create empty object
-  // for each letter in string
-    // if letter in object
-      // add count + 1
-    // if letter not yet in object
-      // count is 1
-  // return an object with the letter and how many times it appears in the string
+  const result = {};
+  for (const letter of input) {
+    if (letter !== ' '){
+      if(result[letter]) {
+        result[letter] += 1
+      } else {
+        result[letter] = 1
+      }
+    }
+  }
+  return result
 }
 
-console.log(assertEqual("lighthouse in the house", {l: 1, i: 2, g: 1, h: 4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1,}))
+const result1 = countLetters("lighthouse in the house")
+
+//assertEqual((result1), {l: 1, i: 2, g: 1, h: 4, t: 2, o: 2, u: 2, s: 2, e: 3, n: 1,})
+assertEqual((result1["l"]), 1)
+assertEqual((result1["i"]), 2)
+assertEqual((result1["g"]), 1)
+assertEqual((result1["h"]), 4)
+assertEqual((result1["t"]), 2)
+assertEqual((result1["o"]), 2)
+assertEqual((result1["u"]), 2)
+assertEqual((result1["s"]), 2)
+assertEqual((result1["e"]), 3)
+assertEqual((result1["n"]), 1)
