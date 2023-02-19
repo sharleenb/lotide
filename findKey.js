@@ -10,3 +10,5 @@ const findKey = function(object1, callback) {
   }
   return result;
 };
+
+module.exports = findKey;
