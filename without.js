@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const without = function(source, itemsToRemove) {
   const newArray = [];
   for (let i = 0; i < source.length; i++) {

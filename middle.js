@@ -1,6 +1,4 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
-  const middle = function(input) {
+const middle = function(input) {
     const result = [];
     const calc = (input.length/2) - 1;
     const halfway = Math.floor(input.length/2);

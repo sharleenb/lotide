@@ -1,0 +1,8 @@
+i this is a line for eidting 
+
+line 1
+line 2
+c
+
+line 2
+c
