@@ -1,6 +1,6 @@
 {
   "name": "@sharleenb/lotide",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This project has many utility functions.",
   "main": "assertArraysEqual.js",
   "directories": {
