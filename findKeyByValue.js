@@ -10,3 +10,5 @@ const assertArraysEqual = require('./assertArraysEqual');
     }
     return result;
 };
+
+module.exports = findKeyByValue;
