@@ -13,3 +13,5 @@ for (const item of allItems) {
 }
 return results;
 }
+
+module.exports = countOnly;
